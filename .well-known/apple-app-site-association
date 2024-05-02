@@ -1,0 +1,53 @@
+{
+   "applinks": {
+      "details": [
+         {
+            "appIDs": [
+               "TFTQA6ZGVF.com.JaSure.qa.ios"
+            ],
+            "components": [
+               {
+                  "/": "/all/*",
+                  "comment": "Matches any URL whose path starts with /all/"
+               },
+			   {
+                  "/": "/tech/*",
+                  "comment": "Matches any URL whose path starts with /tech/"
+               },
+               {
+                  "/": "/tech-new/*",
+                  "comment": "Matches any URL whose path starts with /tech-new/"
+               },
+               {
+                  "/": "/home/*",
+                  "comment": "Matches any URL whose path starts with /home/"
+               },
+               {
+                  "/": "/home-new/*",
+                  "comment": "Matches any URL whose path starts with /home-new/"
+               },
+               {
+                  "/": "/cars/*",
+                  "comment": "Matches any URL whose path starts with /cars/"
+               },
+               {
+                  "/": "/cars-new/*",
+                  "comment": "Matches any URL whose path starts with /cars-new/"
+               },
+               {
+                  "/": "/gear/*",
+                  "comment": "Matches any URL whose path starts with /gear/"
+               },
+               {
+                  "/": "/gear-new/*",
+                  "comment": "Matches any URL whose path starts with /gear-new/"
+               },
+               {
+                  "/": "/my-account/*",
+                  "comment": "Matches any URL whose path starts with /my-account/"
+               }
+            ]
+         }
+      ]
+   }
+}

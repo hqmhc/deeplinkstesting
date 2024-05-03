@@ -43,8 +43,16 @@
                   "comment": "Matches any URL whose path starts with /gear-new/"
                },
                {
-                  "/": "/my-account/*",
-                  "comment": "Matches any URL whose path starts with /my-account/"
+                  "/": "/dashboard/*",
+                  "comment": "Matches any URL whose path starts with /dashboard/"
+               },
+               {
+                  "/": "/quotes/*",
+                  "comment": "Matches any URL whose path starts with /quotes/"
+               },
+               {
+                  "/": "/help/*",
+                  "comment": "Matches any URL whose path starts with /help/"
                }
             ]
          }

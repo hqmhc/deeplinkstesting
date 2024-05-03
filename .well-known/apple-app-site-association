@@ -10,7 +10,7 @@
                   "/": "/all/*",
                   "comment": "Matches any URL whose path starts with /all/"
                },
-			   {
+               {
                   "/": "/tech/*",
                   "comment": "Matches any URL whose path starts with /tech/"
                },
@@ -43,6 +43,10 @@
                   "comment": "Matches any URL whose path starts with /gear-new/"
                },
                {
+                  "/": "/my-account/*",
+                  "comment": "Matches any URL whose path starts with /my-account/"
+               },
+               {
                   "/": "/dashboard/*",
                   "comment": "Matches any URL whose path starts with /dashboard/"
                },
@@ -53,6 +57,10 @@
                {
                   "/": "/help/*",
                   "comment": "Matches any URL whose path starts with /help/"
+               },
+               {
+                  "/": "/single-items/*",
+                  "comment": "Matches any URL whose path starts with /single-items/"
                }
             ]
          }

@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 20px;
+
+  /* use flex to center its content horizontally */
+  display: flex;
+  justify-content: center;
+
+}
+
+#links {
+  margin-top: 20px;
+}

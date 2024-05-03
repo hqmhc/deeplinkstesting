@@ -4,10 +4,65 @@
   <title>Deeplink Testing</title>
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script type="text/javascript" src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  
+  
+  
 </head>
 <body>
   <div class="container">
-    <h2>Your Content Goes Here</h2>
+    <div>
+      <h2>Your Content Goes Here</h2>
+      <div id="links"></div>
+    </div>
+    
   </div>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript">
+
+    const QA_TEST_DOMAIN = 'https://santamswitch.onrender.com';
+
+    const PATHS = [
+      "/all",
+      "/tech",
+      "/gear",
+      "/home",
+      "/cars",
+      "/tech-new",
+      "/gear-new",
+      "/home-new",
+      "/cars-new",
+      "/dashboard",
+      "/quotes",
+      "/my-account",
+    ];
+
+    function addTailwindCSSToElement(element, tailwindStyle) {
+      tailwindStyle.split(" ").forEach((style) => {
+        element.classList.add(style);
+      });
+    }
+
+    function createLink(path) {
+      const link = document.createElement("a");
+      link.href = QA_TEST_DOMAIN + path;
+      link.textContent = path;
+      
+      const paragraph = document.createElement("p");
+      addTailwindCSSToElement(paragraph, "text-white p-2 rounded bg-blue-600");
+
+      paragraph.appendChild(link);      
+      return paragraph;
+    }
+
+    function addLinks() {
+      const links = document.getElementById("links");
+      PATHS.forEach((path) => {
+        links.appendChild(createLink(path));
+      });
+    }
+
+    addLinks();
+  </script>
+</body>
 </html>
